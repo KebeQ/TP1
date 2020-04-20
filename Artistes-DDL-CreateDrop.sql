@@ -1,9 +1,3 @@
-/* **********************************************************
-	DDL Create
-	Schéma MRD:	"Cas Projets Version 0" --> Pour exercice 1
-	Auteur:		Sylvie Monjal - Cégep de Ste-Foy  	
-***********************************************************/
-
 /* 
 	Suppression des tables et séquences
 */
