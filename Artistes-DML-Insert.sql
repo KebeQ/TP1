@@ -11,7 +11,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(100,
+		(0,
 		 000000000,
 		 'Arvid',
 		 'Félix',
@@ -26,7 +26,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(101,
+		(1,
 		 111111111,
 		 'Paul',
 		 'Logan',
@@ -41,7 +41,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(102,
+		(2,
 		 222222222,
 		 'Fougères',
 		 'Léo',
@@ -56,7 +56,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(103,
+		(3,
 		 333333333,
 		 'Trudeau',
 		 'Justin',
@@ -71,7 +71,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(104,
+		(4,
 		 444444444,
 		 'Onfroy',
 		 'Jahseh',
@@ -98,6 +98,25 @@ INSERT INTO
 	VALUES
 		('Twenty One Pilots',
 		800);
+INSERT INTO
+	MEMBRE
+		(NO_ARTISTE,
+		 NOM_GROUPE,
+		 ROLE)
+	VALUES
+		(/* no_artiste */,
+		/* ' ' */,
+		/* ' ' */);
+INSERT INTO
+	CLIENT
+		(NO_ARTISTE,
+		 NOM_GROUPE,
+		 ROLE)
+	VALUES
+		(/* no_artiste */,
+		/* ' ' */,
+		/* ' ' */);
+
 
 		 
 -- Sauvegarde des données
