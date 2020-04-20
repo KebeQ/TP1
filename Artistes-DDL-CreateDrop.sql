@@ -1,30 +1,29 @@
-/* 
-	Suppression des tables et séquences
-*/
+/*  Suppression des tables et séquences */
 DROP TABLE ARTISTE;
 DROP SEQUENCE SEQ_EMPLOYE_NO_EMPLOYE;
 
 DROP TABLE DEPARTEMENT;
 
-/*
-	Création des tables et séquences
-*/
+/* Création des tables et séquences */
 /***********************************************************
 	Table "ARTISTE"
 ***********************************************************/
 CREATE TABLE ARTISTE
 (
-    NOM_DEPARTEMENT		VARCHAR2(5)		NOT NULL,
-    NOM_COMPLET			VARCHAR2(15)	NOT NULL,
-    TELEPHONE			NUMERIC(10,0)	NULL,
-    CONSTRAINT PK_DEPARTEMENT
-					PRIMARY KEY (NOM_DEPARTEMENT),
-    CONSTRAINT U1_DEPARTEMENT
-					UNIQUE (NOM_COMPLET)
+	NO_ARTISTE	SMALLINT		NOT NULL,
+    NAS			NUMERIC(9,0)	NOT NULL,
+    NOM			VARCHAR2(20)	NOT NULL,
+    PRENOM		VARCHAR2(15)	NOT NULL, 	
+	NOM_SCENE	VARCHAR2(25)	NULL,
+	TELEPHONE	NUMERIC(10,0)	NOT NULL,
+    CONSTRAINT PK_ARTISTE
+		PRIMARY KEY (NO_ARTISTE),
+    CONSTRAINT U1_ARTISTE
+		UNIQUE (NAS)
 );
 
 /***********************************************************
-	Table "EMPLOYE"
+	Table "GROUPE"
 ***********************************************************/
 CREATE TABLE EMPLOYE
 (
@@ -57,4 +56,3 @@ CREATE TABLE EMPLOYE
 CREATE SEQUENCE SEQ_EMPLOYE_NO_EMPLOYE
 			 INCREMENT BY 1
 			 START WITH 1;
-			 
