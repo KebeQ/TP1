@@ -1,7 +1,7 @@
 /* 
 	Suppression des tables et séquences
 */
-DROP TABLE EMPLOYE;
+DROP TABLE ARTISTE;
 DROP SEQUENCE SEQ_EMPLOYE_NO_EMPLOYE;
 
 DROP TABLE DEPARTEMENT;
@@ -10,9 +10,9 @@ DROP TABLE DEPARTEMENT;
 	Création des tables et séquences
 */
 /***********************************************************
-	Table "DEPARTEMENT"
+	Table "ARTISTE"
 ***********************************************************/
-CREATE TABLE DEPARTEMENT
+CREATE TABLE ARTISTE
 (
     NOM_DEPARTEMENT		VARCHAR2(5)		NOT NULL,
     NOM_COMPLET			VARCHAR2(15)	NOT NULL,
