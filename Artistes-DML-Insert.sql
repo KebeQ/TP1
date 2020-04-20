@@ -125,6 +125,33 @@ INSERT INTO
 		(101,
 		Desrocher',
 		4189002059);
+INSERT INTO
+	CLIENT
+		(CODE,
+		 NOM,
+		 TELEPHONE)
+	VALUES
+		(103,
+		'Bédard',
+		4182227777);
+INSERT INTO
+	CLIENT
+		(CODE,
+		 NOM,
+		 TELEPHONE)
+	VALUES
+		(104,
+		'Racine',
+		4180000001);
+INSERT INTO
+	CLIENT
+		(CODE,
+		 NOM,
+		 TELEPHONE)
+	VALUES
+		(105,
+		'Bergerons',
+		4184554455);
 
 
 		 
