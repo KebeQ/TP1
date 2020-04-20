@@ -56,6 +56,20 @@ CREATE TABLE MEMBRE
 		FOREIGN KEY (NOM_GROUPE)
 		REFERENCES	GROUPE (NOM)
 );
+
+/***********************************************************
+	Table "CLIENT"
+***********************************************************/
+CREATE TABLE CLIENT
+(
+	CODE		SMALLINT	NOT NULL,
+	NOME		VARCHAR2(30)	NOT NULL,
+	TELEPHONE	NUMERIC(10,0)	NOT NULL,
+	
+	CONSTRAINT PK_CLIENT
+		PRIMARY KEY (CODE)
+);
+	
 	
 		
 		
