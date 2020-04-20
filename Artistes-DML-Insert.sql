@@ -109,13 +109,22 @@ INSERT INTO
 		/* ' ' */);
 INSERT INTO
 	CLIENT
-		(NO_ARTISTE,
-		 NOM_GROUPE,
-		 ROLE)
+		(CODE,
+		 NOM,
+		 TELEPHONE)
 	VALUES
-		(/* no_artiste */,
-		/* ' ' */,
-		/* ' ' */);
+		(100,
+		'Grimard',
+		4181119293);
+INSERT INTO
+	CLIENT
+		(CODE,
+		 NOM,
+		 TELEPHONE)
+	VALUES
+		(101,
+		Desrocher',
+		4189002059);
 
 
 		 
