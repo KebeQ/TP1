@@ -152,7 +152,36 @@ INSERT INTO
 		(105,
 		'Bergerons',
 		4184554455);
-
+INSERT INTO
+	CONTRAT
+		(NO_CONTRAT,
+		 NOM_GROUPE,
+		 CODE_CLIENT,
+		 DATE_CONTRAT,
+		 DATE_PRESTATION,
+		 HEURE_DEBUT_PRESTATION,
+		 HEURE_FIN_PRESTATION,
+		 CACHET_PREVU)
+	VALUES
+		(,
+		'',
+		,
+		,
+		,
+		,
+		,
+		);
+INSERT INTO
+	CLIENT
+		(NO_FACTURE,
+		 NO_CONTRAT,
+		 DATE_FACTURE,
+		 DATE_PAIEMENT,
+		 MONTANT_FACTURE)
+	VALUES
+		(0,
+		/*No contrat */,
+		TO_DATE('2021-10-01');
 
 		 
 -- Sauvegarde des données
