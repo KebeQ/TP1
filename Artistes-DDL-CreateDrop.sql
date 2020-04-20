@@ -1,10 +1,10 @@
-/*  Suppression des tables et séquences */
+/* Suppression des tables et séquences */
 DROP TABLE ARTISTE;
 DROP SEQUENCE SEQ_EMPLOYE_NO_EMPLOYE;
 
 DROP TABLE DEPARTEMENT;
 
-/* Création des tables et séquences */
+/* Création des tables */
 /***********************************************************
 	Table "ARTISTE"
 ***********************************************************/
@@ -118,24 +118,24 @@ CREATE TABLE FACTURE
 		UNIQUE (NO_CONTRAT)
 );
 	
-
-
-	
-	
-	
-	
-		
-		
-
-
-CONSTRAINT U1_EMPLOYE
-					UNIQUE (NAS),
-    CONSTRAINT FK_EMP_DEPARTEMENT
-					FOREIGN KEY (NOM_DEPARTEMENT)
-					REFERENCES DEPARTEMENT (NOM_DEPARTEMENT)
+/* Création des Séquences */
 /***********************************************************
-	Séquence "SEQ_EMPLOYE_NO_EMPLOYE"
+	Séquence "SEQ_ARTISTE_NO_ARTISTE"
 ***********************************************************/
-CREATE SEQUENCE SEQ_EMPLOYE_NO_EMPLOYE
-			 INCREMENT BY 1
-			 START WITH 1;
+CREATE SEQUENCE SEQ_ARTISTE_NO_ARTISTE
+	INCREMENT BY 1
+	START WITH 1;
+	
+/***********************************************************
+	Séquence "SEQ_FACTURE_NO_FACTURE"
+***********************************************************/
+CREATE SEQUENCE SEQ_FACTURE_NO_FACTURE
+	INCREMENT BY 1
+	START WITH 1;
+
+/***********************************************************
+	Séquence "SEQ_CONTRAT_NO_CONTRAT"
+***********************************************************/
+CREATE SEQUENCE SEQ_CONTRAT_NO_CONTRAT
+	INCREMENT BY 1
+	START WITH 1;
