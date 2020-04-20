@@ -2,38 +2,42 @@
      Table ARTISTES: 5 artistes 
 /*===============================================================================*/	
 
---=====================================================================================
--- Département 'Recherche'
 INSERT INTO
-	DEPARTEMENT
-		(NOM_DEPARTEMENT,
-		 NOM_COMPLET,
+	ARTISTE
+		(NO_ARTISTE,
+		 NAS,
+		 NOM,
+		 PRENOM,
+		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		('RD',
-		 'Recherche',
-		 NULL);
---=====================================================================================
--- Département 'Finances'
+		(100,
+		 111111111,
+		 'Arvid',
+		 'Félix',
+		 'Pewidpie',
+		 '4181111111');
 INSERT INTO
-	DEPARTEMENT
-		(NOM_DEPARTEMENT,
-		 NOM_COMPLET,
+	ARTISTE
+		(NO_ARTISTE,
+		 NAS,
+		 NOM,
+		 PRENOM,
+		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		('Fin.',
-		 'Finances',
-		 NULL);
---=====================================================================================
--- Département 'Informatique'
+		(101,
+		 222222222,
+		 'Paul',
+		 'Logan',
+		 'Maverick',
+		 '4182222222');
 INSERT INTO
 	DEPARTEMENT
 	VALUES
 		('Info',
 		 'Informatique',
 		 NULL);
---=====================================================================================
--- Département 'Marketing'
 INSERT INTO
 	DEPARTEMENT
 		(NOM_DEPARTEMENT,
