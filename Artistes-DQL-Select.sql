@@ -9,7 +9,7 @@ SELECT
 FROM
         ARTISTE
 WHERE 
-        NOM_SCENE IS NOT NULL;        
+        NOM_SCENE IS NOT NULL;       
 ORDER BY
         NOM, PRENOM;
         
