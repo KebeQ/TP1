@@ -1,7 +1,6 @@
 /*===============================================================================
-     Table ARTISTES: 5 artistes 
+     Table ARTISTE : 5 artistes 
 /*===============================================================================*/	
-
 INSERT INTO
 	ARTISTE
 		(NO_ARTISTE,
@@ -11,7 +10,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(0,
+		(SEQ_ARTISTE_NO_ARTISTE.NEXTVAL,
 		 000000000,
 		 'Arvid',
 		 'Félix',
@@ -26,7 +25,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(1,
+		(SEQ_ARTISTE_NO_ARTISTE.NEXTVAL,
 		 111111111,
 		 'Paul',
 		 'Logan',
@@ -41,11 +40,11 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(2,
+		(SEQ_ARTISTE_NO_ARTISTE.NEXTVAL,
 		 222222222,
 		 'Fougères',
 		 'Léo',
-		 'Fouki',
+		 NULL,
 		 '4182222222');
 INSERT INTO
 	ARTISTE
@@ -56,7 +55,7 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(3,
+		(SEQ_ARTISTE_NO_ARTISTE.NEXTVAL,
 		 333333333,
 		 'Trudeau',
 		 'Justin',
@@ -71,12 +70,16 @@ INSERT INTO
 		 NOM_SCENE,
 		 TELEPHONE)
 	VALUES
-		(4,
+		(SEQ_ARTISTE_NO_ARTISTE.NEXTVAL,
 		 444444444,
 		 'Onfroy',
 		 'Jahseh',
 		 'XXXTENTACION',
 		 '4184444444');
+		 
+/*===============================================================================
+     Table GROUPE : 3 groupes
+/*===============================================================================*/
 INSERT INTO
 	GROUPE
 		(NOM,
@@ -98,15 +101,53 @@ INSERT INTO
 	VALUES
 		('Twenty One Pilots',
 		800);
+		
+/*===============================================================================
+     Table MEMBRE 
+/*===============================================================================*/
 INSERT INTO
 	MEMBRE
 		(NO_ARTISTE,
 		 NOM_GROUPE,
 		 ROLE)
 	VALUES
-		(/* no_artiste */,
-		/* ' ' */,
-		/* ' ' */);
+		(1,
+		 'Imagine Dragon',
+		 NULL);
+
+INSERT INTO
+	MEMBRE
+		(NO_ARTISTE,
+		 NOM_GROUPE,
+		 ROLE)
+	VALUES
+		(2,
+		 'Imagine Dragon',
+		 'Chanteur');
+
+INSERT INTO
+	MEMBRE
+		(NO_ARTISTE,
+		 NOM_GROUPE,
+		 ROLE)
+	VALUES
+		(1,
+		 'Twenty One Pilots',
+		 'Pianiste');
+
+INSERT INTO 
+	MEMBRE
+		(NO_ARTISTE,
+		 NOM_GROUPE,
+		 ROLE)
+	VALUES
+		(3,
+		 'One Direction',
+		 'Guitariste');
+		 
+/*===============================================================================
+     Table CLIENT : 5 clients 
+/*===============================================================================*/
 INSERT INTO
 	CLIENT
 		(CODE,
