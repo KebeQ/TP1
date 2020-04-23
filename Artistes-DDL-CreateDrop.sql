@@ -2,6 +2,7 @@
 DROP TABLE FACTURE,
 	DROP SEQUENCE SEQ_FACTURE_NO_FACTURE,	
 DROP TABLE CLIENT,
+	DROP SEQUENCE SEQ_CLIENT_CODE,
 DROP TABLE CONTRAT,
 	DROP SEQUENCE SEQ_CONTRAT_NO_CONTRAT,	
 DROP TABLE MEMBRE,		
@@ -142,5 +143,12 @@ CREATE SEQUENCE SEQ_FACTURE_NO_FACTURE
 	Séquence "SEQ_CONTRAT_NO_CONTRAT"
 ***********************************************************/
 CREATE SEQUENCE SEQ_CONTRAT_NO_CONTRAT
+	INCREMENT BY 1
+	START WITH 1;
+
+/***********************************************************
+	Séquence "SEQ_CLIENT_CODE"
+***********************************************************/
+CREATE SEQUENCE SEQ_CLIENT_CODE
 	INCREMENT BY 1
 	START WITH 1;
