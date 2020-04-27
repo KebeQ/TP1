@@ -32,15 +32,17 @@ ORDER BY
 /***********************************************************
         Script C3
 ***********************************************************/
-SELECT
-        CLIENT.CODE,
+SELECT      
         CLIENT.NOM,
-        CLIENT.TELEPHONE,        
+        CLIENT.TELEPHONE,  
+        CONTRAT.CODE_CLIENT,
         CONTRAT.NO_CONTRAT,
         CONTRAT.DATE_CONTRAT,
         CONTRAT.CACHET_PREVUT
 FROM
         CLIENT, CONTRAT
+WHERE 
+        CONTRAT.CODE_CLIENT = CLIENT.CODE          
 ORDER BY 
         CLIENT.NOM;
 
