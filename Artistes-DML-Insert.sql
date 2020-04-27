@@ -243,7 +243,7 @@ INSERT INTO
 		 1,
 		 TO_DATE('2020-12-02', 'yyyy-mm-dd'),
 		 TO_DATE('2021-02-13', 'yyyy-mm-dd'),
-		 20,
+		 18,
 		 24,
 		 400);
 
