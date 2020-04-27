@@ -23,7 +23,9 @@ SELECT
 FROM
         CONTRAT
 WHERE
-        DATE_CONTRAT = '2019' AND DATE_PRESTATION = '2020'
+        DATE_CONTRAT BETWEEN TO_DATE('2019-01-01', 'yyyy-mm-dd') AND TO_DATE('2019-12-31', 'yyyy-mm-dd')
+        AND
+        DATE_PRESTATION BETWEEN TO_DATE('2020-01-01', 'yyyy-mm-dd') AND TO_DATE('2020-12-31', 'yyyy-mm-dd')        
 ORDER BY 
         DATE_CONTRAT DESC;
 
